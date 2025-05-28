@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cat facts and images</title>
+  <link rel="stylesheet" href="./src/style.css">
+  
+<body>
+  <section class="header">
+    <div class="title">the cat app</div>
+    <form class="form">
+      <div class="cat-facts-section">
+        <label for="facts-number" class="label">Number of cats facts(50 Maximum)</label>
+        <div class="label-button">
+          <input type="number" id ="facts-number" placeholder="Number of cats facts(50max)">
+          <button type="button" class="option" id="fact">submit</button>
+
+        </div>
+      </div>
+      <div class="cat-images-section">
+        <label for="images-number" class="label">number of cats photos(10 Max)</label>
+        <div class="label-button">
+          <input type="number" id ="images-number" placeholder="Number of cats facts(50max)">
+          <button type="button" class="option" id="image">submit</button>
+
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <section class="container">
+    <div class="loader" id="loader" style="display: none;"><img src="/public/Dual Ring@1x-0.5s-203px-203px.gif" alt=""></div>
+    
+    <div class="facts-container" >
+      <p id="facts-container"></p>
+    </div>
+    <div class="images-container">
+      <p id="images-container"></p>
+    </div>
+  </section>
+
+  
+  <script type="module" src="/src/main.mjs"></script> 
+</body>
+</html>

@@ -1,0 +1,143 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+:root{
+  --body-font-type: Arial,Inter, sans-serif;
+  --primary-color:#f9cfc3;
+  --secondary-color:#fff7f3;
+  --body-font-size: 62.5%;
+  --submit-button-bgrc:#c69ac0;
+}
+
+body{
+  
+  font-family: var(--body-font-type);
+  font-size: var(--body-font-size);
+  
+  background-color: var(--secondary-color);
+
+}
+.header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 45vh;
+  background-color: var(--primary-color);
+  padding: 2em;
+  
+}
+
+.title{
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 3rem;
+  padding: 1em;
+}
+.loader{
+  display: flex;
+  justify-content: center;
+}
+
+.form{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 5em;
+}
+@media screen and (max-width:25.75em) {
+  .header{
+    padding: .5em;
+  }
+  .form {
+    gap: 3em;
+
+  }
+  .form label{
+    height: 3em;
+    font-size: 2em;
+    width: 10em;
+  }
+  .title{
+    padding: .4em;
+    font-size: 2.5em;
+  }
+  
+  
+}
+.form input{
+  height: 4em;
+  width: 25em;
+  border-radius: .5em;
+  border: none;
+  text-align: center;
+}
+.form button{
+  height: 3em;
+  width: 6em;
+  background-color: var(--submit-button-bgrc);
+  border-radius: .5em;
+  border: none;
+  font-size: 1.7em;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+@media screen and (max-width:40.31em) {
+  .form{
+    display: flex;
+    flex-direction: column;
+  }
+  .header{
+    height: 50vh;
+  }
+  
+}
+.label{
+  font-size: 1.4rem;
+  font-weight: 550;
+  text-transform: capitalize;
+}
+.container{
+  
+}
+.facts-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.0rem;
+  font-weight: 500;
+  margin-left: 10em;
+  margin-top: 3em;
+  
+}
+@media screen and (max-width:60em) {
+  .facts-container{
+    margin-left: .4em;
+  }
+  
+}
+
+.images-container{
+  display: flex;
+  flex-direction: column;  
+  justify-content: space-between;
+  align-items: center;
+  
+  
+}
+.images-container p{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+.images-container img{
+  width: 27%;
+  height: 60vh;
+  margin: .8rem; 
+
+}
