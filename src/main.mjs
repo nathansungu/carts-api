@@ -66,6 +66,10 @@ const fechData = (url, id) => {
       }
     }
   });
+  responce.catch((e)=>{
+    factsContainer.innerText="Ooops, sorry. An error happened."
+
+  })
 };
 
 eventListener();
