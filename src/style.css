@@ -112,6 +112,11 @@ body{
   margin-top: 3em;
   
 }
+.item{
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
 @media screen and (max-width:60em) {
   .facts-container{
     margin-left: .4em;
@@ -141,3 +146,4 @@ body{
   margin: .8rem; 
 
 }
+

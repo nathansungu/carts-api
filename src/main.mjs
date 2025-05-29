@@ -49,9 +49,9 @@ const fechData = (url, id) => {
       imageContainer.innerText="";
       loader.style.display="none";
       for (let i = 0; i < data.length; i++) {
-        factsContainer.innerHTML += `<p class="item">${i + 1}. ${
+        factsContainer.innerHTML += `<p class="item">${i + 1}. <span>${
           data[i]
-        } </p> <br>`;
+        } </span></p> <br>`;
       }
     } else {
       const { data } = dataResponse;
@@ -60,8 +60,7 @@ const fechData = (url, id) => {
       loader.style.display="none";
       for (let i = 0; i < data.length; i++) {
         let imageobject = data[i];
-        const { id, url, ...other } = imageobject;
-        console.log(url);
+        const {  url } = imageobject;
         imageContainer.innerHTML += `<img src="${url}" > `;
       }
     }
